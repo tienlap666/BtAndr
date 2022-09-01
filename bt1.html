@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const txt = document.createElement("label");
+        txt.innerHTML = "a:   ";
+        document.body.appendChild(txt);
+
+
+        const txtbox = document.createElement("input", typeof("txt"));
+
+        document.body.appendChild(txtbox);
+
+        document.body.appendChild(document.createElement("br"));
+
+        const txt1 = document.createElement("label");
+        txt1.innerHTML = "b:    ";
+        document.body.appendChild(txt1);
+
+
+        const txtbox1 = document.createElement("input", typeof("txt"));
+        document.body.appendChild(txtbox1);
+
+
+        document.body.appendChild(document.createElement("br"));
+
+        const btn = document.createElement("button");
+        btn.innerHTML = "sum";
+        btn.addEventListener("click", function() {
+            txtAns.innerHTML = parseInt(txtbox.value) + parseInt(txtbox1.value);
+        })
+        document.body.appendChild(btn);
+
+        const txtAns = document.createElement("label");
+        txtAns.innerHTML = "Answer";
+        document.body.appendChild(txtAns);
+    </script>
+</body>
+
+</html>
